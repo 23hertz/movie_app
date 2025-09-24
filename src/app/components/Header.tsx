@@ -1,0 +1,52 @@
+import Image from "next/image";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+import {
+  faArrowLeft,
+  faArrowRight,
+  faTrash,
+} from "@fortawesome/free-solid-svg-icons";
+const Header = () => {
+  return (
+    <div className="flex flex-row justify-between py-8 bg-[#121829]">
+      <img
+        src="../images/logo.png"
+        width={300}
+        className="w-[40px] h-[40px] "
+        alt="logo"
+      />
+      <ul className="flex flex-row ">
+        <li className="px-8">
+          <a
+            href="#"
+            className="font-poppins font-semibold font-[16px] tracking-[2%] leading-[24px] text-[#a8aebf] tracking-[2%]"
+          >
+            Movies
+          </a>
+        </li>
+        <li className="px-8">
+          <a
+            href="#"
+            className="font-poppins font-semibold font-[16px] tracking-[2%] leading-[24px] text-[#a8aebf] tracking-[2%]"
+          >
+            Tv Shows
+          </a>
+        </li>
+        <li className="px-8 ">
+          <a
+            href="#"
+            className="font-poppins font-semibold font-[16px] tracking-[2%] leading-[24px] text-[#a8aebf] tracking-[2%]"
+          >
+            Suggest Me
+            <FontAwesomeIcon
+              icon={faArrowRight}
+              className="ml-2 w-[16px] h-[16px]"
+            />
+          </a>
+        </li>
+      </ul>
+    </div>
+  );
+};
+
+export default Header;
