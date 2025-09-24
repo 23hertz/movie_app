@@ -3,12 +3,20 @@
 import { useEffect, useState } from "react";
 import Card from "./Card";
 
-type MediaItem = {
+type RAwMediaItem = {
   id: number;
   title?: string;
   name?: string;
   poster_path: string | null;
+  // media_type: type;
   media_type?: "movie" | "tv";
+};
+
+type MediaItem = {
+  id: number;
+  title: string;
+  poster_path: string | null;
+  media_type: "movie" | "tv";
 };
 
 const CardDisplay = () => {
@@ -28,7 +36,7 @@ const CardDisplay = () => {
           : [];
 
         // 👇 Decide if each item is movie or series
-        const normalized = results.map((item: any) => {
+        const normalized: MediaItem[] = results.map((item: RAwMediaItem) => {
           // const type: "movie"|| (item.title ? "movie" : "tv");
 
           const type: "movie" | "tv" =
