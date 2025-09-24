@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Logo from "@/app/images/logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import {
@@ -9,9 +10,10 @@ import {
 const Header = () => {
   return (
     <div className="flex flex-row justify-between py-8 bg-[#121829]">
-      <img
-        src="../images/logo.png"
-        width={300}
+      <Image
+        src="/images/logo.png"
+        width={40}
+        height={40}
         className="w-[40px] h-[40px] "
         alt="logo"
       />
