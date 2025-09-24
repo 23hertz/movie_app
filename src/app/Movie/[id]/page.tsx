@@ -210,7 +210,7 @@ type PageProps = {
     type: string;
   };
   searchParams: {
-    type?: "movie" | "Series";
+    type?: "movie" | "tv";
   };
 };
 
