@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { useParams, useSearchParams } from "next/navigation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
+import Image from "next/image";
 import Header from "@/app/components/Header";
 
 const MovieDetails = () => {
@@ -56,9 +57,11 @@ const MovieDetails = () => {
 
       {/* Hero Section */}
       <div className="mt-7 relative">
-        <img
+        <Image
           src={`https://image.tmdb.org/t/p/w500${details.backdrop_path}`}
           alt="details"
+          width={1400}
+          height={480}
           className="w-[1400px] h-[480px] mx-auto rounded-[40px] object-cover mt-5"
         />
         <div className="absolute top-100 left-20 w-[528px] h-[200px] bg-[#20283e] p-[40px] rounded-[24px] ">
@@ -79,10 +82,12 @@ const MovieDetails = () => {
 
       {/* Info Section */}
       <div className="mt-46 flex justify-between gap-16 px-20">
-        <img
+        <Image
           src={`https://image.tmdb.org/t/p/w500${details.poster_path}`}
           alt={details.title || details.name}
           className="w-[480px] h-[720px] rounded-[24px]"
+          width={480}
+          height={720}
         />
 
         <div className="text-gray-300 w-[480px] h-[688px]">
