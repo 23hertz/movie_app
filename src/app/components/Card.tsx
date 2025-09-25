@@ -20,7 +20,7 @@ export default function Card({ id, title, posterPath, type }: CardProps) {
   return (
     <Link href={`/Movie/${id}?type=${type}`}>
       <div
-        onClick={handleClick} // 👈 log when card is clicked
+        onClick={handleClick} // 
         className="bg-[#20283e] rounded-lg overflow-hidden shadow-md cursor-pointer"
       >
         <Image

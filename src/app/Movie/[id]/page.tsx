@@ -221,10 +221,10 @@ export default async function MovieDetailsPage({
   const { id } = params;
   const type = searchParams.type || "movie";
 
-  // const endpoint = type === "series" ? "series" : "movie";
+
 
   const res = await fetch(
-    `https://api.themoviedb.org/3/${type}/${id}?api_key=${process.env.NEXT_PUBLIC_TMDB_API_KEY}&language=en-US`
+    `https://api.themoviedb.org/3/${type}/${id}?api_key=${process.env.TMDB_API_KEY}&language=en-US`
   );
 
   if (!res.ok) {
@@ -245,7 +245,7 @@ export default async function MovieDetailsPage({
   }
 
   return (
-    // <div className="min-h-screen py-10 px-6 flex flex-col md:flex-row gap-10">
+    
     <div className="min-h-screen bg-[#121829]">
       <Header />
       {/* Poster */}
