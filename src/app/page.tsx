@@ -11,7 +11,7 @@ const Home = () => {
       <Hero />
       <SearchMovie />
       <Category />
-      <CardDisplay />
+      <CardDisplay mediaType="both" limit={8} />
     </div>
   );
 };
