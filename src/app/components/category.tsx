@@ -7,8 +7,8 @@ import TvShow from "../TvShow/page";
 const Category = () => {
   const [select, setSelect] = useState(0);
   return (
-    <div className="w-[400px] h-[56px] mt-16 bg-[#000000]/20 py-4 rounded-[12px]">
-      <ul className="flex flex-row ">
+    <div className="w-full max-w-[400px] h-[56px] mt-16 bg-[#000000]/20 py-4 rounded-[12px]">
+      <ul className="flex flex-row gap-2 justify-start ">
         <li className="px-2">
           <a
             href="#"

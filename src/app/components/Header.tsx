@@ -10,7 +10,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 const Header = () => {
   return (
-    <div className="flex flex-row justify-between py-8 bg-[#121829]">
+    <div className="flex flex-row justify-between py-8 px-4 bg-[#121829]">
       <Link href="/" className="inline-block">
         <Image
           src="/images/logo.png"
@@ -21,9 +21,8 @@ const Header = () => {
         />
       </Link>
 
-      <ul className="flex flex-row ">
-        <li className="px-8">
-          <></>
+      <ul className="flex flex-row space-x-8 ">
+        <li className="">
           <a
             href="#"
             className="font-poppins font-semibold font-[16px] tracking-[2%] leading-[24px] text-[#a8aebf] tracking-[2%]"
@@ -31,7 +30,7 @@ const Header = () => {
             Movies
           </a>
         </li>
-        <li className="px-8">
+        <li>
           <a
             href="#"
             className="font-poppins font-semibold font-[16px] tracking-[2%] leading-[24px] text-[#a8aebf] tracking-[2%]"
@@ -39,7 +38,7 @@ const Header = () => {
             Tv Shows
           </a>
         </li>
-        <li className="px-8 ">
+        <li>
           <a
             href="#"
             className="font-poppins font-semibold font-[16px] tracking-[2%] leading-[24px] text-[#a8aebf] tracking-[2%]"
