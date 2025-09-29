@@ -72,7 +72,7 @@ export default async function MovieDetailsPage({
             alt={data.title || data.name || "Poster"}
             width={1200}
             height={480}
-            className="rounded-lg shadow-lg w-[1200px] h-[480px] my-12 mx-auto"
+            className="rounded-lg shadow-lg w-[1200px] h-[480px] my-12 mx-auto object-fit object-center"
           />
         ) : (
           <div className="w-[300px] h-[450px] bg-gray-700 rounded-lg flex items-center justify-center">
@@ -105,7 +105,7 @@ export default async function MovieDetailsPage({
               alt={data.title || data.name || "Poster"}
               width={720}
               height={480}
-              className="rounded-lg shadow-lg w-[720px] h-[480px]  mx-auto rounded-[24px]"
+              className="rounded-lg shadow-lg w-[720px] h-[480px]  mx-auto rounded-[24px] object-fit object-center"
             />
           ) : (
             <div className="w-[300px] h-[450px] bg-gray-700 rounded-lg flex items-center justify-center">

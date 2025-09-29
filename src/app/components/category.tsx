@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import MovieShow from "../MovieShow/page";
+import TvShow from "../TvShow/page";
 
 const Category = () => {
   const [select, setSelect] = useState(0);
@@ -25,12 +26,6 @@ const Category = () => {
           </Link>
         </li>
         <li className="px-2">
-          {/* <a
-            href="#"
-            className="font-poppins font-semibold font-[16px] tracking-[2%] leading-[24px] text-[#8e95a9] hover:bg-[#7b6ef6] py-[8px] px-[32px] hover:text-[#ebe9fe] rounded-[8px]"
-          >
-            Tv Shows
-          </a> */}
           <Link
             href="/TvShow"
             className="font-poppins font-semibold font-[16px] tracking-[2%] leading-[24px] text-[#8e95a9] hover:bg-[#7b6ef6] hover:text-[#ebe9fe] py-[8px] px-[32px] rounded-[8px]"

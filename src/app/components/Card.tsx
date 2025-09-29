@@ -31,24 +31,26 @@ export default function Card({
     <Link href={`/Movie/${id}?type=${type}`}>
       <div
         onClick={handleClick} //
-        className="bg-[#20283e] rounded-lg overflow-hidden shadow-md cursor-pointer relative"
+        className="bg-[#20283e] rounded-lg overflow-hidden shadow-md cursor-pointer relative trasition-transform hover:scale-105"
       >
-        <span className="absolute top-[1.38px] left-[1.38px]  text-[#ffad49] bg-[#000]/60 font-semibold flex flex-row gap-2 align-center justify-center  rounded-[8px] h-[40px] w-[60px]">
+        <span className="absolute top-[1.38px] left-[1.38px]  text-[#ffad49] bg-[#000]/60 font-semibold flex flex-row gap-1 item-center align-center justify-center  rounded-[8px] h-[40px] w-[60px]">
           <FontAwesomeIcon
             icon={faStar}
             className="mt-3 w-[13.33px] h-[13.33px]"
           />
-          <h4 className="mt-2">{rating}</h4>
+          <h4 className="mt-2 text-sm sm:text-base">{rating}</h4>
         </span>
         <Image
           src={posterPath}
           alt={title}
           width={500}
           height={80}
-          className="w-full h-80 object-cover"
+          className="w-full h-80 object-cover object-center"
         />
         <div className="p-4">
-          <h3 className="text-white text-lg font-bold">{title}</h3>
+          <h3 className="text-white text-lg text-sm sm:text-base md:text-lgfont-bold">
+            {title}
+          </h3>
         </div>
       </div>
     </Link>

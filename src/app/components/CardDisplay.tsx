@@ -1,5 +1,5 @@
 "use client";
-
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import Card from "./Card";
 
@@ -92,8 +92,14 @@ const CardDisplay = ({ mediaType = "both", limit = 16 }: CardDisplayProps) => {
     fetchData();
   }, [mediaType, limit]);
 
-  if (loading) return <p>Loading...</p>;
+  // if (loading) return <p>Loading...</p>;
 
+  if (loading)
+    return (
+      <div>
+        <Image src="/spinner.svg" alt="Loading..." width={60} height={60}/>
+      </div>
+    );
   return (
     <div className="min-h-screen py-10 px-6 mt-10">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
