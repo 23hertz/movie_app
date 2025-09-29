@@ -1,6 +1,6 @@
 const Hero = () => {
   return (
-    <div className="mt-20 w-full max-w-[588px] px-4 h-[144px]">
+    <div className="mt-6 lg:mt-10 w-full max-w-[588px] px-4 h-[144px]">
       <h1 className="font-semibold text-[44px] lg:text-[64px] md-text-6xl text-[#ebeef5] leading-[80px] sm:leading-tight md:leading-80px tracking-[-2%]">
         MaileHereko
       </h1>
