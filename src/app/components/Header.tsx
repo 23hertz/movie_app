@@ -24,7 +24,7 @@ const Header = () => {
       <ul className="flex flex-row space-x-8 ">
         <li className="">
           <a
-            href="#"
+            href="/MovieShow"
             className="font-poppins font-semibold font-[16px] tracking-[2%] leading-[24px] text-[#a8aebf] tracking-[2%]"
           >
             Movies
@@ -32,7 +32,7 @@ const Header = () => {
         </li>
         <li>
           <a
-            href="#"
+            href="/TvShow"
             className="font-poppins font-semibold font-[16px] tracking-[2%] leading-[24px] text-[#a8aebf] tracking-[2%]"
           >
             Tv Shows
